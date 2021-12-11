@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export interface IStyledCursor {
   size?: number;
@@ -18,5 +18,10 @@ export const StyledCursor = styled.div`
     pointer-events: none;
     width: 100%;
     height: 100%;
+    & path {
+      fill: var(--cta-color);
+      stroke: var(--cta-color);
+      stroke-width: 2px;
+    }
   }
 `;
